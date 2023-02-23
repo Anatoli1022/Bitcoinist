@@ -3,7 +3,13 @@ import React from 'react';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 
-const HomePage = () => <Layout>Hello world!</Layout>;
+import Hero from 'components/pages/home/hero';
+
+const HomePage = () => (
+  <Layout>
+    <Hero />
+  </Layout>
+);
 
 export default HomePage;
 
