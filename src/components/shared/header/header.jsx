@@ -10,43 +10,43 @@ const cx = classNames.bind(styles);
 
 const Header = () => (
   <section className={cx('header')}>
-    <div className={cx('container', 'header-container')}>
-      <div>
-        <Link to="">
-          <img src={illustration} loading="eager" />
+    <div className={cx('container')}>
+      <nav className={cx('navigation')}>
+        <Link to="" className>
+          <img src={illustration} loading="eager" className={cx('logo')} />
         </Link>
-      </div>
-      <ul className={cx('list')}>
-        <li className={cx('list-item')}>
-          <Link to="" className={cx('item-link')}>
-            Home
-          </Link>
-        </li>
-        <li className={cx('list-item')}>
-          <Link to="" className={cx('item-link')}>
-            Pricing
-          </Link>
-        </li>
-        <li className={cx('list-item')}>
-          <Link to="" className={cx('item-link')}>
-            Templates
-          </Link>
-        </li>
-        <li className={cx('list-item')}>
-          <Link to="" className={cx('item-link')}>
-            Blog
-          </Link>
-        </li>
-        <li className={cx('list-item')}>
-          <Link to="" className={cx('item-link')}>
-            Cases
-          </Link>
-        </li>
-      </ul>
-      <div>
-        <button className={cx('button-sing')}>Sing Up</button>
-        <button className={cx('button-login')}>Log in</button>
-      </div>
+        <ul className={cx('list')}>
+          <li className={cx('list-item')}>
+            <Link to="" className={cx('item-link')}>
+              Home
+            </Link>
+          </li>
+          <li className={cx('list-item')}>
+            <Link to="" className={cx('item-link')}>
+              Pricing
+            </Link>
+          </li>
+          <li className={cx('list-item')}>
+            <Link to="" className={cx('item-link')}>
+              Templates
+            </Link>
+          </li>
+          <li className={cx('list-item')}>
+            <Link to="" className={cx('item-link')}>
+              Blog
+            </Link>
+          </li>
+          <li className={cx('list-item')}>
+            <Link to="" className={cx('item-link')}>
+              Cases
+            </Link>
+          </li>
+        </ul>
+        <div>
+          <button className={cx('button-sing')}>Sing Up</button>
+          <button className={cx('button-login')}>Log in</button>
+        </div>
+      </nav>
     </div>
   </section>
 );
