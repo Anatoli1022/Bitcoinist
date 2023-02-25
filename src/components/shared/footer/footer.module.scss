@@ -59,9 +59,14 @@
   margin-top: 12px;
   color: #9497a1;
   text-decoration: none;
+  transition: 0.2s;
 
   &:first-of-type {
     margin-top: 30px;
+  }
+
+  &:hover {
+    color: #fff;
   }
 }
 
@@ -72,9 +77,9 @@
   text-align: center;
 }
 
-.copyright{
-    margin-top: 0;
-    margin-bottom: 0;
+.copyright {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-wrapper {
