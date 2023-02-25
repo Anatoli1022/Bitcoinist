@@ -22,7 +22,7 @@ const Business = () => (
       </p>
       <ul className={cx('list')}>
         <li className={cx('item')}>
-          <img src={learning} alt="" />
+          <img src={learning} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Machine learning</h4>
           <p className={cx('item-text')}>
             The service does not need to be studied for a long time — the sales department will be
@@ -30,7 +30,7 @@ const Business = () => (
           </p>
         </li>
         <li className={cx('item')}>
-          <img src={analytics} alt="" />
+          <img src={analytics} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Embed analytics</h4>
           <p className={cx('item-text')}>
             Those who work with you will be impressed by the speed and quality of the prepared
@@ -38,7 +38,7 @@ const Business = () => (
           </p>
         </li>
         <li className={cx('item')}>
-          <img src={control} alt="" />
+          <img src={control} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Access control</h4>
           <p className={cx('item-text')}>
             The service has templates with which a new employee will prepare an estimate. Without
@@ -46,7 +46,7 @@ const Business = () => (
           </p>
         </li>
         <li className={cx('item')}>
-          <img src={date} alt="" />
+          <img src={date} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Data analytics</h4>
           <p className={cx('item-text')}>
             Each assessment has statuses — you understand how the work of each manager is
@@ -54,7 +54,7 @@ const Business = () => (
           </p>
         </li>
         <li className={cx('item')}>
-          <img src={consuliting} alt="" />
+          <img src={consuliting} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Big data consulting</h4>
           <p className={cx('item-text')}>
             You earn money on every transaction. It's simple: after all, your profitability is
@@ -62,7 +62,7 @@ const Business = () => (
           </p>
         </li>
         <li className={cx('item')}>
-          <img src={intelligence} alt="" />
+          <img src={intelligence} alt="" loading="lazy" aria-hidden="true" />
           <h4 className={cx('item-title')}>Artificial intelligence</h4>
           <p className={cx('item-text')}>
             Do you sell yourself or do you have ten salesmen under your command? Estimates.guru will
