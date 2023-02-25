@@ -1,0 +1,27 @@
+.customers {
+  padding-top: 120px;
+
+  @mixin xs-down {
+    // 413.98 - 320
+    padding-top: 60px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $font-size-xxl;
+  font-weight: 800;
+  line-height: $line-height-xxl;
+  color: #292d33;
+}
+
+.text {
+  max-width: 450px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.customers-container {
+  margin-top: 30px;
+}
