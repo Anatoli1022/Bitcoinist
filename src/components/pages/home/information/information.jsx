@@ -15,12 +15,13 @@ const Information = () => (
         <div>
           <h2 className={cx('information-title')}>Easy to use, advanced Estimates editor</h2>
           <p className={cx('information-text')}>
-            Our easy to use, advenced editor will help you create estimates faster, confident and
-            without any errors.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
           </p>
         </div>
-        <div className={cx('information-image')}>
-          <img src={advanced} alt="" loading="lazy" aria-hidden="true" />
+        <div className={cx('wrapper-image')}>
+          <img src={advanced} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
         </div>
       </div>
       <div className={cx('information-two')}>
@@ -31,8 +32,8 @@ const Information = () => (
             without any errors.
           </p>
         </div>
-        <div className={cx('information-wrapper')}>
-          <img src={item} alt="" loading="lazy" aria-hidden="true" />
+        <div className={cx('container-image')}>
+          <img src={item} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
         </div>
       </div>
     </div>
