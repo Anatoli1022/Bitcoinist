@@ -28,32 +28,32 @@ const Footer = () => (
           <ul className={cx('social-list')}>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={facebook} alt="" />
+                <img src={facebook} alt="facebook" loading="lazy" />
               </a>
             </li>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={twitter} alt="" />
+                <img src={twitter} alt="twitter" loading="lazy" />
               </a>
             </li>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={linkedin} alt="" />
+                <img src={linkedin} alt="linkedin" loading="lazy" />
               </a>
             </li>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={youtube} alt="" />
+                <img src={youtube} alt="youtube" loading="lazy" />
               </a>
             </li>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={drible} alt="" />
+                <img src={drible} alt="drible" loading="lazy" />
               </a>
             </li>
             <li className={cx('social-item')}>
               <a href="">
-                <img src={behance} alt="" />
+                <img src={behance} alt="behance" loading="lazy" />
               </a>
             </li>
           </ul>
