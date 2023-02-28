@@ -5,7 +5,7 @@ import styles from './advanced.module.scss';
 const cx = classNames.bind(styles);
 
 const Advanced = () => (
-  <section className={cx('advanced')}>
+  <div className={cx('advanced')}>
     <div className={cx('container')}>
       <ul className={cx('list')}>
         <li className={cx('item')}>
@@ -26,7 +26,7 @@ const Advanced = () => (
         </li>
       </ul>
     </div>
-  </section>
+  </div>
 );
 
 export default Advanced;
