@@ -2,6 +2,11 @@
   padding-top: 160px;
   padding-bottom: 120px;
   background-color: #f0f9ff;
+
+  @include sm-down {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 
 .title {
@@ -28,6 +33,10 @@
   padding: 35px;
   background: #fff;
   border-radius: 20px;
+
+  @include sm-down {
+    padding: 25px;
+  }
 }
 
 .wrapper-user {
@@ -57,6 +66,10 @@
 .text-comment {
   margin-top: 25px;
   margin-bottom: 0;
+
+  @include sm-down {
+    font-size: 14px;
+  }
 }
 
 .wrapper {
@@ -64,6 +77,20 @@
     .swiper {
       margin-top: 70px;
       overflow: visible;
+
+      @include sm-down {
+        margin-top: 80px;
+        overflow-x: auto;
+      }
+    }
+
+    .swiper-slide {
+      @include sm-down {
+        min-width: 272px;
+        min-height: 354px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
     }
 
     .swiper-button-prev {
@@ -78,6 +105,10 @@
       &::after {
         font-size: 20px;
       }
+
+      @include sm-down {
+        display: none;
+      }
     }
 
     .swiper-button-next {
@@ -91,6 +122,15 @@
       &::after {
         font-size: 20px;
       }
+
+      @include sm-down {
+        display: none;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
     }
   }
 }
