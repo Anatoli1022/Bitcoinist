@@ -2,6 +2,11 @@
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f1f6fa;
+
+  @include sm-down {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .contact-container {
@@ -20,15 +25,27 @@
   font-weight: 800;
   line-height: 1.5;
   color: #292d33;
+
+  @include sm-down {
+    font-size: 30px;
+  }
 }
 
 .text {
   margin-top: 25px;
   margin-bottom: 0;
+
+  @include sm-down {
+    display: none;
+  }
 }
 
 .mail-wrapper {
   margin-top: 80px;
+
+  @include sm-down {
+    margin-top: 30px;
+  }
 }
 
 .mail-text {
@@ -64,4 +81,8 @@
 .container-form {
   padding: 50px;
   background-color: #fff;
+
+  @include sm-down {
+    display: none;
+  }
 }
