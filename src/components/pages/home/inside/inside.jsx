@@ -34,10 +34,16 @@ const Inside = () => (
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
         </SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide>
+          {' '}
+          <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
+        </SwiperSlide>
+        <SwiperSlide>
+          {' '}
+          <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
+        </SwiperSlide>
       </Swiper>
     </div>
   </section>
