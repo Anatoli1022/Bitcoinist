@@ -21,12 +21,12 @@ const Customers = () => (
         laudan, totam rem aperiam.
       </p>
       <div className={cx('customers-container')}>
-        <img src={wood} alt="Wild Wood" loading="lazy" />
-        <img src={apple} alt="Apple Rush" loading="lazy" />
-        <img src={logo} alt="" loading="lazy" aria-hidden="true" />
-        <img src={group} alt="AV-group" loading="lazy" />
-        <img src={hurd} alt="Hard 2 ignore" loading="lazy" />
-        <img src={fairtech} alt="Fairtech" loading="lazy" />
+        <img src={wood} alt="Wild Wood" loading="lazy" className={cx('image')} />
+        <img src={apple} alt="Apple Rush" loading="lazy" className={cx('image')} />
+        <img src={logo} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
+        <img src={group} alt="AV-group" loading="lazy" className={cx('image')} />
+        <img src={hurd} alt="Hard 2 ignore" loading="lazy" className={cx('image')} />
+        <img src={fairtech} alt="Fairtech" loading="lazy" className={cx('image')} />
       </div>
     </div>
   </section>
