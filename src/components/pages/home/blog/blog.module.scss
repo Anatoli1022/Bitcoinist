@@ -1,0 +1,95 @@
+.blog {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+
+.title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: $line-height-xxl;
+  color: #292d33;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  border-radius: 6px;
+}
+
+.link {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #292d33;
+  text-decoration: none;
+}
+
+.text {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.link-more {
+  max-width: 110px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #185cff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+
+  &:hover {
+    border-bottom: 1px solid #185cff;
+  }
+}
+
+.arrow {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.wrapper {
+  :global {
+    .swiper {
+      margin-top: 70px;
+      overflow: visible;
+    }
+
+    .swiper-button-prev {
+      top: -100px;
+      right: 120px;
+      left: inherit;
+      padding: 30px 50px;
+      color: #002b4e;
+      background-color: #f0f9ff;
+      border-radius: 20px;
+
+      &::after {
+        font-size: 20px;
+      }
+    }
+
+    .swiper-button-next {
+      top: -100px;
+      right: 0;
+      padding: 30px 50px;
+      color: #002b4e;
+      background-color: #f0f9ff;
+      border-radius: 20px;
+
+      &::after {
+        font-size: 20px;
+      }
+    }
+  }
+}
