@@ -1,6 +1,11 @@
 .blog {
   padding-top: 170px;
   padding-bottom: 100px;
+
+  @include sm-down {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 .title {
@@ -11,12 +16,20 @@
   font-weight: 800;
   line-height: $line-height-xxl;
   color: #292d33;
+
+  @include sm-down {
+    font-size: 30px;
+  }
 }
 
 .blog-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include sm-down {
+    scroll-snap-align: start;
+  }
 }
 
 .image {
@@ -30,6 +43,10 @@
   line-height: 24px;
   color: #292d33;
   text-decoration: none;
+
+  @include sm-down {
+    font-size: 16px;
+  }
 }
 
 .text {
@@ -37,6 +54,10 @@
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
+
+  @include sm-down {
+    display: none;
+  }
 }
 
 .link-more {
@@ -63,6 +84,21 @@
     .swiper {
       margin-top: 70px;
       overflow: visible;
+
+      @include sm-down {
+        margin-top: 30px;
+        overflow-x: auto;
+      }
+    }
+
+    .swiper-slide {
+      @include sm-down {
+        min-width: 272px;
+        min-height: 300px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+      }
     }
 
     .swiper-button-prev {
@@ -77,6 +113,10 @@
       &::after {
         font-size: 20px;
       }
+
+      @include sm-down {
+        display: none;
+      }
     }
 
     .swiper-button-next {
@@ -90,6 +130,15 @@
       &::after {
         font-size: 20px;
       }
+
+      @include sm-down {
+        display: none;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
     }
   }
 }
