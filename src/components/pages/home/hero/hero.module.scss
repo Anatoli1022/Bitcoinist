@@ -1,11 +1,19 @@
 .hero {
   padding-top: 45px;
   padding-bottom: 240px;
+
+  @include sm-down {
+    padding-top: 0;
+  }
 }
 
 .hero-container {
   display: flex;
   justify-content: space-between;
+
+  @include sm-down {
+    flex-direction: column-reverse;
+  }
 }
 
 .title {
@@ -16,12 +24,21 @@
   font-weight: 800;
   line-height: $line-height-xxl;
   color: #292d33;
+
+  @include sm-down {
+    margin-top: 30px;
+    font-size: 30px;
+  }
 }
 
 .text {
   max-width: 540px;
   margin-top: 30px;
   margin-bottom: 0;
+
+  @include sm-down {
+    margin-top: 20px;
+  }
 }
 
 .link {
@@ -42,4 +59,13 @@
     color: #185cff;
     background-color: #fff;
   }
+
+  @include sm-down {
+    display: block;
+    text-align: center;
+  }
+}
+
+.hero-image {
+  width: 100%;
 }
