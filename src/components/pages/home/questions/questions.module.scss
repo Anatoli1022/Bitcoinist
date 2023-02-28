@@ -1,6 +1,11 @@
 .questions {
   padding-bottom: 130px;
   margin-top: 120px;
+
+  @include sm-down {
+    padding-bottom: 40px;
+    margin-top: 70px;
+  }
 }
 
 .title {
@@ -10,6 +15,11 @@
   font-weight: 800;
   line-height: $line-height-xxl;
   color: #292d33;
+
+  @include sm-down {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 .list {
@@ -17,6 +27,10 @@
   margin-top: 60px;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    margin-top: 20px;
+  }
 }
 
 .item-text {
@@ -25,6 +39,14 @@
   margin-bottom: 0;
   overflow: hidden;
   transition: 0.2s;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+
+  @include sm-down {
+    font-size: 14px;
+  }
 }
 
 .item {
@@ -59,6 +81,10 @@
       }
     }
   }
+
+  @include sm-down {
+    padding: 20px 50px 20px 15px;
+  }
 }
 
 .item-title {
@@ -72,21 +98,28 @@
   &::before,
   &::after {
     position: absolute;
+    right: 10px;
     bottom: 50%;
     width: 18px;
     height: 2px;
     content: '';
     background-color: #292d33;
     transition: all 0.3s ease 0s;
+
+    @include sm-down {
+      right: -30px;
+    }
   }
 
   &::before {
-    right: 10px;
     transform: rotate(90deg);
   }
 
   &::after {
-    right: 10px;
     transform: rotate(0deg);
+  }
+
+  @include sm-down {
+    font-size: 16px;
   }
 }
