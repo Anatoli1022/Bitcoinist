@@ -2,6 +2,11 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #f1f6fa;
+
+  @include sm-down {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .title {
@@ -12,12 +17,20 @@
   line-height: $line-height-xxl;
   color: #292d33;
   text-align: center;
+
+  @include sm-down {
+    font-size: 30px;
+  }
 }
 
 .text {
   max-width: 900px;
   margin: 30px auto 0;
   text-align: center;
+
+  @include sm-down {
+    font-size: 14px;
+  }
 }
 
 .list {
@@ -30,6 +43,11 @@
   margin-top: 60px;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    row-gap: 20px;
+    margin-top: 30px;
+  }
 }
 
 .item {
@@ -39,6 +57,10 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgb(12 68 204 / 10%);
+
+  @include sm-down {
+    padding: 30px 25px;
+  }
 }
 
 .item-title {
@@ -47,9 +69,18 @@
   font-size: 22px;
   font-weight: 700;
   color: #292d33;
+
+  @include sm-down {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 
 .item-text {
   margin-top: 16px;
   margin-bottom: 0;
+
+  @include sm-down {
+    font-size: 14px;
+  }
 }
