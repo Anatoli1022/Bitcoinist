@@ -14,7 +14,7 @@ const Questions = () => (
           <h3 className={cx('item-title')}>How to change the status of an estimate?</h3>
           <p className={cx('item-text')}>
             Estimate statuses are tags that help you understand at what stage the work with the
-            document is.{' '}
+            document is.
           </p>
           <p className={cx('item-text')}>
             - In the work - a new estimate, estimate in the process of creation. <br />
