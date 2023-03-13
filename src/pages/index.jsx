@@ -7,7 +7,7 @@ import Hero from 'components/pages/home/hero';
 import Business from 'components/pages/home/business';
 import Information from 'components/pages/home/information';
 import Advanced from 'components/pages/home/advanced';
-import Templates from 'components/pages/home/Templates';
+import Templates from 'components/pages/home/templates';
 import Inside from 'components/pages/home/inside';
 import Pricing from 'components/pages/home/pricing';
 import Contact from 'components/pages/home/contact';
