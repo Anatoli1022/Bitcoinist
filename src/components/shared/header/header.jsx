@@ -19,12 +19,12 @@ const Header = () => (
         </Link>
         <ul className={cx('list')}>
           <li className={cx('list-item')}>
-            <Link to="" className={cx('item-link')}>
+            <Link to="/" className={cx('item-link')}>
               Home
             </Link>
           </li>
           <li className={cx('list-item')}>
-            <Link to="" className={cx('item-link')}>
+            <Link to="/services" className={cx('item-link')}>
               Pricing
             </Link>
           </li>
