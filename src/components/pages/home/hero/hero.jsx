@@ -1,8 +1,6 @@
 import classNames from 'classnames/bind';
 import React from 'react';
 
-import { StaticImage } from 'gatsby-plugin-image';
-
 import Link from 'components/shared/link';
 
 import styles from './hero.module.scss';
@@ -28,7 +26,13 @@ const Hero = () => (
         </Link>
       </div>
       <div>
-        <img src={illustration} alt="" loading="eager" />
+        <img
+          src={illustration}
+          alt=""
+          loading="eager"
+          aria-hidden="true"
+          className={cx('hero-image')}
+        />
       </div>
     </div>
   </section>

@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.header-container {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,12 @@
 }
 
 .logo-text {
+  margin-left: 10px;
   vertical-align: middle;
+
+  @include md-down {
+    display: none;
+  }
 }
 
 .list {
@@ -24,6 +29,10 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+
+  @include md-down {
+    display: none;
+  }
 }
 
 .list-item {
@@ -43,6 +52,12 @@
 
   &:hover {
     color: #292d33;
+  }
+}
+
+.container-button {
+  @include md-down {
+    display: none;
   }
 }
 
@@ -75,5 +90,41 @@
   &:hover {
     color: #fff;
     background-color: #185cff;
+  }
+}
+
+.menu {
+  display: none;
+
+  @include md-down {
+    position: relative;
+    z-index: 4;
+    display: block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+}
+
+.menu-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 2px;
+  background-color: #185cff;
+  border-radius: 2px;
+  transition: all 0.5s;
+  transform: translate(-50%, -50%);
+
+  &:nth-of-type(1) {
+    top: calc(50% - 6px);
+  }
+
+  &:nth-of-type(2) {
+    top: calc(50% + 6px);
   }
 }

@@ -1,0 +1,88 @@
+.contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f1f6fa;
+
+  @include sm-down {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 540px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #292d33;
+
+  @include sm-down {
+    font-size: 30px;
+  }
+}
+
+.text {
+  margin-top: 25px;
+  margin-bottom: 0;
+
+  @include sm-down {
+    display: none;
+  }
+}
+
+.mail-wrapper {
+  margin-top: 80px;
+
+  @include sm-down {
+    margin-top: 30px;
+  }
+}
+
+.mail-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mail {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #292d33;
+  text-decoration: none;
+}
+
+.phone-wrapper {
+  margin-top: 25px;
+}
+
+.phone-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.phone {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #292d33;
+  text-decoration: none;
+}
+
+.container-form {
+  padding: 50px;
+  background-color: #fff;
+
+  @include sm-down {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+.customers {
+  padding-top: 120px;
+
+  @include sm-down {
+    padding-top: 60px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $font-size-xxl;
+  font-weight: 800;
+  line-height: $line-height-xxl;
+  color: #292d33;
+
+  @include sm-down {
+    font-size: 30px;
+  }
+}
+
+.text {
+  max-width: 450px;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  @include sm-down {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+.customers-container {
+  margin-top: 30px;
+
+  @include sm-down {
+    margin-top: 15px;
+  }
+}
+
+.image {
+  @include sm-down {
+    max-width: 90px;
+  }
+}
