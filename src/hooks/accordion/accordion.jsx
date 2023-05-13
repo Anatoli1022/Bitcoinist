@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './accordion.module.scss';
 import classNames from 'classnames/bind';
-import Open from 'hooks/open/open';
+import useOpen from 'hooks/open/open';
 
 const cx = classNames.bind(styles);
 
 export const Accordion = ({ section, key }) => {
-  const { isOpen, toggle } = Open(false);
+  const { isOpen, toggle } = useOpen(false);
 
   return (
     <li className={cx('item', { active: isOpen == true })}>
