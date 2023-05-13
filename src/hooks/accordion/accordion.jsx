@@ -10,13 +10,13 @@ export const Accordion = ({ section, key }) => {
 
   return (
     <li className={cx('item', { active: isOpen == true })}>
-      <ExpendableColumn question={section.question} isOpen={isOpen} toggle={toggle} />
-      <TextSection text={section.text} />
+      <Title question={section.question} isOpen={isOpen} toggle={toggle} />
+      <Text text={section.text} />
     </li>
   );
 };
 
-export const ExpendableColumn = ({ question, toggle }) => {
+export const Title = ({ question, toggle }) => {
   return (
     <h3 className={cx('item-title')} onClick={toggle}>
       {question}
@@ -24,6 +24,6 @@ export const ExpendableColumn = ({ question, toggle }) => {
   );
 };
 
-export const TextSection = ({ text }) => {
+export const Text = ({ text }) => {
   return <p className={cx('item-text')}>{text}</p>;
 };
