@@ -29,9 +29,9 @@ const Contact = () => (
           </a>
         </div>
       </div>
-      <div className={cx('container-form')}>
+      {/* <div className={cx('container-form')}>
         <form action="" className={cx('form')}></form>
-      </div>
+      </div> */}
     </div>
   </section>
 );
