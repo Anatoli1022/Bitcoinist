@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <>
       <button className={cx('menu', { active: menu === 'active' })} onClick={updateMenu}>
         <div className={cx('menu-button')}></div>
         <div className={cx('menu-button')}></div>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <button className={cx('button-login')}>Log in</button>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 
